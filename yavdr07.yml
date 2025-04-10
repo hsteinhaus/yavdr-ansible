@@ -23,24 +23,24 @@
                                  # (e.g. nvidia, virtualbox)
     - vdr                        # install vdr and related packages
     - vdr-plugin-menuorg         # install vdr-plugin-menuorg and customize menuorg.xml
-    - autoinstall-virtualbox-guest
+      # - autoinstall-virtualbox-guest
     - lifeguardng                # install and configure vdr-addon-lifeguard-ng
     - yavdr-network              # enable network client capabilities
-    - samba-install              # install samba server
-    - samba-config               # configure samba server
-    - nfs-server                 # install nfs server
+      # - samba-install              # install samba server
+      # - samba-config               # configure samba server
+      # - nfs-server                 # install nfs server
     - pulseaudio                 # install pulseaudio
     - yavdr-xorg                 # graphical session
     - yavdr-remote               # remote configuration files, services and scripts
     - yavdr-desktop              # openbox session with yavdr frontend script
     - osd2web                    # configure osd2web to run on the second display if there is any
     - autoinstall-satip          # install vdr-plugin-satip if a Sat>IP server has been found
-    - autoinstall-targavfd       # install vdr-plugin-targavfd if display is connected
-    - autoinstall-imonlcd        # install vdr-plugin-imonlcd if a matchind display is connected
-    - autoinstall-imonvfd        # install vdr-plugin-imonvfd if a matchind display is connected
-    - autoinstall-pvr350         # install vdr-plugin-pvr350 if a matching card is detected
-    - autoinstall-hauppauge-pvr  # install vdr-plugin-pvrinput if a matching card is found
-    - autoinstall-dvbsddevice    # install vdr-plugin-dvbsddevice if a matching card is detected
+      # - autoinstall-targavfd       # install vdr-plugin-targavfd if display is connected
+      # - autoinstall-imonlcd        # install vdr-plugin-imonlcd if a matchind display is connected
+      # - autoinstall-imonvfd        # install vdr-plugin-imonvfd if a matchind display is connected
+      # - autoinstall-pvr350         # install vdr-plugin-pvr350 if a matching card is detected
+      # - autoinstall-hauppauge-pvr  # install vdr-plugin-pvrinput if a matching card is found
+      # - autoinstall-dvbsddevice    # install vdr-plugin-dvbsddevice if a matching card is detected
     # - autoinstall-dvbhddevice    # install vdr-plugin-dvbsddevice if a matching card is detected - NOTE: you need to compile and install the drivers yourself
     - autoinstall-hardware-irmp  # install yavdr-hardware-irmp if a matching usb device is detected
     - autoinstall-atric-usb      # preconfigure lircd for Atric IR-WakeupUSB receiver
@@ -57,6 +57,7 @@
                                   # and link them to /var/lib/channellogos/ - this needs at least 300 MB of storage
     - kodi
     - dvd                        # set up packages and a udev rule to allow kodi and other players
+    - mcli
                                  # to play and eject optical media
     - wakeup                     # set up wakeup methods for rtc etc.
     - grub-config                # configure grub
