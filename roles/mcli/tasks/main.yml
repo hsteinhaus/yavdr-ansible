@@ -1,0 +1,15 @@
+---
+# file: roles/mcli/tasks/main.yml
+
+
+- name: apt | install vdr-plugin-mcli
+  apt:
+    name: vdr-plugin-mcli
+    state: present
+    install_recommends: no
+
+- name: apt | install vdr-addon-mcli-tool
+  apt:
+    name: vdr-addon-mcli-tool
+    state: present
+    install_recommends: no
