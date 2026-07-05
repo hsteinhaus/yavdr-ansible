@@ -13,3 +13,9 @@
     name: vdr-addon-mcli-tool
     state: present
     install_recommends: no
+- name: expand template for /etc/vdr/conf.avail/mcli.conf
+  template:
+    src: templates/mcli.conf.j2
+    dest: /etc/vdr/conf.avail/mcli.conf
+  tags:
+    - config
