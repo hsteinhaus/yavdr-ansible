@@ -1,0 +1,19 @@
+# 10.22.20.39:/video/1 /srv/vdr/video  nfs  _netdev,nfsvers=4,noatime,nodiratime,x-systemd.automount,x-systemd.idle-timeout=60s 0 0
+# 10.22.20.39:/media   /srv/vdr/media  nfs  _netdev,nfsvers=4,noatime,nodiratime,x-systemd.automount,x-systemd.idle-timeout=60s 0 0
+
+- name: Mount an NFS volume
+  ansible.posix.mount:
+    src: 10.22.20.39:/video/1
+    path: /srv/vdr/video
+    opts: _netdev,nfsvers=4,noatime,nodiratime,x-systemd.automount,x-systemd.idle-timeout=60s
+    state: mounted
+    fstype: nfs
+
+- name: Mount an NFS volume
+  ansible.posix.mount:
+    src: 10.22.20.39:/media
+    path: /srv/vdr/media
+    opts: _netdev,nfsvers=4,noatime,nodiratime,x-systemd.automount,x-systemd.idle-timeout=60s
+    state: mounted
+    fstype: nfs
+
