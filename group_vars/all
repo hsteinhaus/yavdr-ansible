@@ -69,6 +69,7 @@ vdr_plugins:
   - vdr-plugin-skinnopacity
   - vdr-plugin-live
   - vdr-plugin-epgsearch
+  - vdr-plugin-skinenigmang
 
 # set the name of the output plugin (as used by vdrctl) - this defaults to softhddevice on x64 platforms and rpihddevice on Raspberry Pi 2 and 3
 # selected_frontend: softhddevice
@@ -109,7 +110,7 @@ samba:
   workgroup: YAVDR
   windows_compatible: '{{ vdr.safe_dirnames }}'  # set to true to disable unix extensions, enable follow symlinks and wide links
 # install kodi as flatpak instead of a debian package
-kodi_as_flatpak: False
+kodi_as_flatpak: True
 # additional packages you want to install
 extra_packages:
   - htop
