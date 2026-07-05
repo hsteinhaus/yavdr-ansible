@@ -1,10 +1,10 @@
+branch: noble
+ppa_owner: 'ppa:seahawk1986-hotmail'
+# add the following PPAs
+repositories:
+  - '{{ ppa_owner }}/{{branch}}-main'
+  - '{{ ppa_owner }}/vdr-2.7.4'
+#  - '{{ ppa_owner }}/{{branch}}-kodi'
+
 # branch: noble
 # ppa_owner: 'ppa:seahawk1986-hotmail'
-# # add the following PPAs
-# repositories:
-#   - '{{ ppa_owner }}/{{branch}}-main'
-#   - '{{ ppa_owner }}/vdr-2.7.4'
-#   - '{{ ppa_owner }}/{{branch}}-kodi'
-
-branch: jammy
-ppa_owner: 'ppa:seahawk1986-hotmail'
